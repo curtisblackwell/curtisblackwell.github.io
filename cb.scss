@@ -1,0 +1,120 @@
+// Vars.
+// ------------------------------------------------------------------------------------------------
+$vertical-rhythm: 2rem;
+
+// Colors.
+$black: #333;
+$grey: #ccc;
+$white: #f0f0f0;
+$white-dark: mix($black, $white, 5%);
+
+$blue: #1c92dc;
+$blue-dark: mix($black, $blue, 25%);
+$blue-light: mix($white, $blue, 30%);
+
+$purple: #6c5c8d;
+$purple-light: mix($white, $purple, 80%);
+
+
+// ------------------------------------------------------------------------------------------------
+// Styles.
+// ------------------------------------------------------------------------------------------------
+* {
+  margin-bottom: 0;
+  margin-top: 0;
+
+  + * {
+    margin-top: $vertical-rhythm;
+  }
+}
+
+li,
+script {
+  margin-top: initial;
+}
+
+html {
+  background-color: $white;
+  background-image: linear-gradient(to bottom, $white-dark, $white 10%);
+  color: $black;
+  font: 20px/1.5 sans-serif;
+}
+
+body {
+  margin: 6rem auto;
+  max-width: 600px;
+  width: 90%;
+}
+
+::-moz-selection {
+  background: $purple-light;
+}
+
+::selection {
+  background: $purple-light;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+p:first-of-type {
+  font-size: 1.15rem;
+  font-weight: 300;
+}
+
+strong {
+  color: $purple;
+  font-weight: 600;
+}
+
+a {
+  color: $blue;
+  transition: color .2s ease-in-out;
+
+  &:hover {
+    color: $blue-dark;
+  }
+
+  &:visited {
+    color: $purple;
+  }
+}
+
+hr {
+  $excess-width: 15%;
+
+  border: 0;
+  border-top: 1px solid $purple-light;
+  margin-left: -$excess-width / 2;
+  width: 100% + $excess-width;
+
+  &, + * {
+    margin-top: $vertical-rhythm * 2;
+  }
+
+  &:last-of-type {
+    &::before {
+      background-image: linear-gradient(to right, rgba($white, 0), $white 20%, $white 80%, rgba($white, 0));
+      content: '🐐';
+      font-size: 3rem;
+      left: 50%;
+      padding-left: $vertical-rhythm * 2;
+      padding-right: $vertical-rhythm * 2;
+      position: absolute;
+      transform: translate(-50%, -50%);
+    }
+
+    &, + * {
+      margin-top: $vertical-rhythm * 3;
+    }
+  }
+}
+
+footer {
+  text-align: center;
+}
+
+.hashtag {
+  color: $purple;
+}
