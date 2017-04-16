@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  margin: 6rem auto;
+  margin: 0 auto 3rem;
   max-width: 600px;
   width: 90%;
 }
@@ -63,12 +63,8 @@ a {
 }
 
 hr {
-  $excess-width: 15%;
-
   border: 0;
   border-top: 1px solid $purple-light;
-  margin-left: -$excess-width / 2;
-  width: 100% + $excess-width;
 
   &, + * {
     margin-top: $vertical-rhythm * 2;
@@ -102,4 +98,17 @@ footer {
 
 .hashtag {
   color: $purple;
+}
+
+@media (min-width: 700px) {
+  body {
+    margin: 6rem auto;
+  }
+
+  hr {
+    $excess-width: 15%;
+
+    margin-left: -$excess-width / 2;
+    width: 100% + $excess-width;
+  }
 }
