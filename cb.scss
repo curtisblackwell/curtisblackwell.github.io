@@ -1,4 +1,5 @@
 @import 'vars';
+@import 'system-font-css/system-font.scss';
 
 * {
   margin-bottom: 0;
@@ -10,19 +11,16 @@
 }
 
 html {
+  background-color: $white;
+  background-image: linear-gradient(to bottom, $white-dark, $white 10%);
   border-top: 1px solid $purple;
+  color: $black;
+  font: 20px/1.5 system-ui;
 }
 
 li,
 script {
   margin-top: initial;
-}
-
-html {
-  background-color: $white;
-  background-image: linear-gradient(to bottom, $white-dark, $white 10%);
-  color: $black;
-  font: 20px/1.5 sans-serif;
 }
 
 body {
@@ -66,7 +64,7 @@ a {
   }
 }
 
-span[title="¯\\\_(ツ)_/¯"] {
+span[title='¯\\\_(ツ)_/¯'] {
   white-space: nowrap;
 }
 
@@ -74,16 +72,17 @@ hr {
   border: 0;
   border-top: 1px solid $purple-light;
 
-  &, + * {
+  &,
+  + * {
     margin-top: $vertical-rhythm * 2;
   }
 
   &:last-of-type {
     &::before {
       background-image: $goat, linear-gradient(to right, rgba($white, 0), $white 20%, $white 80%, rgba($white, 0));
-      background-size: contain;
-      background-repeat: no-repeat;
       background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
       content: '';
       font-size: 3rem;
       height: 3rem;
@@ -94,14 +93,21 @@ hr {
       transform: translate(-50%, -50%);
     }
 
-    &, + * {
+    &,
+    + * {
       margin-top: $vertical-rhythm * 3;
     }
   }
 }
 
 footer {
-  text-align: center;
+  ol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    padding-left: 0;
+  }
 }
 
 .hashtag {

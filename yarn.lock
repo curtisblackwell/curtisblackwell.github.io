@@ -1946,6 +1946,10 @@ supports-color@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-2.0.0.tgz#535d045ce6b6363fa40117084629995e9df324c7"
 
+system-font-css@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/system-font-css/-/system-font-css-2.0.1.tgz#5e16978f490a96b5be0bae5060193457eaf7d0b4"
+
 tar-pack@^3.4.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/tar-pack/-/tar-pack-3.4.0.tgz#23be2d7f671a8339376cbdb0b8fe3fdebf317984"
