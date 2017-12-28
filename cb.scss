@@ -12,7 +12,10 @@
 
 html {
   background-color: $white;
-  background-image: linear-gradient(to bottom, $white-dark, $white 10%);
+  background-image: url(./goat.svg), linear-gradient(to bottom, $white-dark, $white 10%);
+  background-position: top right, 0 0;
+  background-repeat: no-repeat;
+  background-size: 15%, 100%;
   border-top: 1px solid $purple;
   color: $black;
   font: 20px/1.5 system-ui;
