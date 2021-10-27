@@ -28,7 +28,9 @@ return [
 
     // helpers
     'getDate' => function ($page) {
-        return Datetime::createFromFormat('U', $page->date);
+        return $page->date
+            ? Datetime::createFromFormat('U', $page->date)
+            : Datetime::createFromFormat('Y-m-d', substr($page->getFilename(), 0, 10));
     },
     'getExcerpt' => function ($page, $length = 255) {
         if ($page->excerpt) {
