@@ -3,21 +3,22 @@
 use Illuminate\Support\Str;
 
 return [
-    'baseUrl' => '',
-    'production' => false,
-    'siteName' => 'Persfessional Growth',
+    'baseUrl'         => '',
+    'production'      => false,
+    'siteName'        => 'Persfessional Growth',
     'siteDescription' => 'Writings about my personal and professional growth.',
-    'siteAuthor' => 'Curtis Blackwell',
+    'siteAuthor'      => 'Curtis Blackwell',
 
     // collections
     'collections' => [
         'posts' => [
             'author' => 'Curtis Blackwell', // Default author, if not provided in a post
-            'sort' => '-date',
-            'path' => 'blog/{filename}',
+            'sort'   => '-date' ,
+            'path'   => 'blog/{filename}' ,
+            'filter' => fn ($post) => $post->published,
         ],
         'categories' => [
-            'path' => '/blog/categories/{filename}',
+            'path'  => '/blog/categories/{filename}',
             'posts' => function ($page, $allPosts) {
                 return $allPosts->filter(function ($post) use ($page) {
                     return $post->categories ? in_array($page->getFilename(), $post->categories, true) : false;
