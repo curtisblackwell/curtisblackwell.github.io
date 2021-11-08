@@ -15,14 +15,15 @@ hljs.registerLanguage('scss', require('highlight.js/lib/languages/scss'));
 hljs.registerLanguage('yaml', require('highlight.js/lib/languages/yaml'));
 
 document.querySelectorAll('pre code').forEach((block) => {
-    hljs.highlightBlock(block);
+  hljs.highlightBlock(block);
 });
 
 Vue.config.productionTip = false;
 
 new Vue({
-    components: {
-        Search,
-    },
+  components: {
+    Search,
+  },
 }).$mount('#vue-search');
 
+console.log('🐐');
