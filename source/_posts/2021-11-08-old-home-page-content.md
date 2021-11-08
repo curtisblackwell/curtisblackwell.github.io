@@ -1,3 +1,21 @@
+---
+extends: _layouts.post
+section: content
+title: Old Home Page
+published: true
+featured: false
+categories: [sentimental]
+---
+
+
+
+
+My previous home page content feels a little dated, but I feel bad getting rid of it, so I'm keeping it around in the form of a blog post. Here it is.
+
+
+---
+
+
 <header>
     <h1 title="Myyy naaame… is Giovanni. An' I'm here to tell youu… that myyy naaame… is Giovaaanniiiiii.">
         My name is <strong>Curtis&nbsp;Blackwell</strong>.

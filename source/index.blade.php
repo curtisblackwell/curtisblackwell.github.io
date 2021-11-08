@@ -3,7 +3,9 @@
 @section('body')
     <div class="grid grid-cols-3 gap-16">
         <div class="col-span-2">
-            @include('_home-content')
+            @md
+                @include('_home-content')
+            @endmd
         </div>
 
         <div>
