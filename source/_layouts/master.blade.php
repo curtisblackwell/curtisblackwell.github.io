@@ -25,18 +25,23 @@
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
     </head>
 
-    <body class="flex flex-col justify-between min-h-screen bg-gray-100 text-gray-800 leading-normal font-sans">
-        <header class="flex items-center shadow bg-white border-b h-24 py-4" role="banner">
-            <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
+    <body class="flex flex-col justify-between min-h-screen font-sans leading-normal text-gray-800 bg-gray-100">
+        <header class="flex items-center h-24 py-4 bg-white border-b shadow" role="banner">
+            <div class="container flex items-center px-4 mx-auto max-w-8xl lg:px-8">
                 <div class="flex items-center">
                     <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
-                        <img class="h-8 md:h-10 mr-3" src="/assets/img/logo.svg" alt="{{ $page->siteName }} logo" />
+                        <img
+                            class="h-16 mr-3"
+                            src="/assets/img/goat.svg"
+                            alt="Simple line-drawing of a wide-eyed goat used as a logo"
+                        />
 
-                        <h1 class="text-lg md:text-2xl text-blue-800 font-semibold hover:text-blue-600 my-0">{{ $page->siteName }}</h1>
+                        <h1 class="my-0 text-lg font-semibold text-blue-800 md:text-2xl hover:text-blue-600">{{ $page->siteName }}
+                        </h1>
                     </a>
                 </div>
 
-                <div id="vue-search" class="flex flex-1 justify-end items-center">
+                <div id="vue-search" class="flex items-center justify-end flex-1">
                     <search></search>
 
                     @include('_nav.menu')
@@ -48,25 +53,23 @@
 
         @include('_nav.menu-responsive')
 
-        <main role="main" class="flex-auto w-full container max-w-4xl mx-auto py-16 px-6">
+        <main role="main" class="container flex-auto w-full max-w-5xl px-6 py-16 mx-auto">
             @yield('body')
         </main>
 
-        <footer class="bg-white text-center text-sm mt-12 py-4" role="contentinfo">
-            <ul class="flex flex-col md:flex-row justify-center list-none">
-                <li class="md:mr-2">
-                    &copy; <a href="https://tighten.co" title="Tighten website">Tighten</a> {{ date('Y') }}.
-                </li>
-
+        <footer class="relative py-4 mt-12 text-sm text-center bg-white">
+            <ul class="flex flex-col justify-center space-x-4 list-none md:flex-row">
+                <li><a href="./resume.pdf">Resumé</a></li>
+                <li><a href="https://github.com/curtisblackwell">Github</a></li>
+                <li><a href="/blog">Writing</a></li>
                 <li>
-                    Built with <a href="http://jigsaw.tighten.co" title="Jigsaw by Tighten">Jigsaw</a>
-                    and <a href="https://tailwindcss.com" title="Tailwind CSS, a utility-first CSS framework">Tailwind CSS</a>.
+                    <a href="&#x6d;&#97;&#105;&#x6c;&#116;&#111;&#x3a;&#x69;&#97;&#109;&#x40;&#99;&#117;&#x72;&#x74;&#105;s&#x62;&#108;&#97;&#x63;&#x6b;&#119;e&#x6c;&#108;&#46;&#x63;&#x6f;&#109;?&#x73;&#117;&#98;&#x6a;&#x65;&#99;&#x74;&#x3d;🐐&#38;&#x62;&#x6f;&#100;y&#x3d;&#73;&#37;&#x32;&#x30;&#119;a&#x6e;&#110;&#97;&#x25;&#x32;&#48;s&#x65;&#110;&#100;&#x25;&#x32;&#48;&#x79;&#x6f;&#117;&#37;&#x32;&#48;&#51;&#x30;&#x25;&#50;0🐐&#x73;&#44;%&#x32;&#48;&#98;&#x75;&#x74;&#37;2&#x30;&#102;&#105;&#x72;&#x73;&#116;&#x25;&#x32;&#48;&#73;&#x25;&#50;&#48;&#x6e;&#x65;&#101;&#100;&#x25;&#50;&#48;&#x79;&#x6f;&#117;r&#x25;&#50;&#48;&#x61;&#x64;&#100;r&#x65;&#115;&#115;&#x2e;"
+                    >Email</a>
                 </li>
             </ul>
         </footer>
 
         <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
-
         @stack('scripts')
     </body>
 </html>
