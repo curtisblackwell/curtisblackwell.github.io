@@ -8,7 +8,7 @@ pagination:
 @extends('_layouts.master')
 
 @section('body')
-    <h1>Blog</h1>
+    <h1>Gettin' Better without Ron Funches</h1>
 
     <hr class="my-6 border-b">
 
