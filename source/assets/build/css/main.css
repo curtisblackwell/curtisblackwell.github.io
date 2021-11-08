@@ -23228,6 +23228,21 @@ pre code {
   transition: all .5s ease-out;
 }
 
+main + footer::before {
+  background-image: url("/assets/img/goat-emoji.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  height: 3rem;
+  left: 50%;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  position: absolute;
+  transform: translate(-50%, -75%);
+  top: 0;
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;
