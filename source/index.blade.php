@@ -1,50 +1,40 @@
 @extends('_layouts.master')
 
 @section('body')
-    @foreach ($posts->where('featured', true) as $featuredPost)
-        <div class="w-full mb-6">
-            @if ($featuredPost->cover_image)
-                <img src="{{ $featuredPost->cover_image }}" alt="{{ $featuredPost->title }} cover image" class="mb-6">
-            @endif
-
-            <p class="text-gray-700 font-medium my-2">
-                {{ $featuredPost->getDate()->format('F j, Y') }}
-            </p>
-
-            <h2 class="text-3xl mt-0">
-                <a href="{{ $featuredPost->getUrl() }}" title="Read {{ $featuredPost->title }}" class="text-gray-900 font-extrabold">
-                    {{ $featuredPost->title }}
-                </a>
-            </h2>
-
-            <p class="mt-0 mb-4">{!! $featuredPost->getExcerpt() !!}</p>
-
-            <a href="{{ $featuredPost->getUrl() }}" title="Read - {{ $featuredPost->title }}" class="uppercase tracking-wide mb-4">
-                Read
-            </a>
+    <div class="grid grid-cols-3 gap-16">
+        <div class="col-span-2">
+            @include('_home-content')
         </div>
 
-        @if (! $loop->last)
-            <hr class="border-b my-6">
-        @endif
-    @endforeach
+        <div>
+            <h2>Featured Writin's</h2>
+            @foreach ($posts->where('featured')->sortBy('featured') as $featuredPost)
+                <div class="w-full mb-6">
+                    @if ($featuredPost->cover_image)
+                        <img src="{{ $featuredPost->cover_image }}" alt="{{ $featuredPost->title }} cover image" class="mb-6">
+                    @endif
 
+                    <p class="my-2 font-medium text-gray-700">
+                        {{ $featuredPost->getDate()->format('Y.m.d') }}
+                    </p>
 
-    @foreach ($posts->where('featured', false)->take(6)->chunk(2) as $row)
-        <div class="flex flex-col md:flex-row md:-mx-6">
-            @foreach ($row as $post)
-                <div class="w-full md:w-1/2 md:mx-6">
-                    @include('_components.post-preview-inline')
+                    <h2 class="mt-0 text-3xl">
+                        <a href="{{ $featuredPost->getUrl() }}" title="Read {{ $featuredPost->title }}" class="font-extrabold text-gray-900">
+                            {{ $featuredPost->title }}
+                        </a>
+                    </h2>
+
+                    <p class="mt-0 mb-4">{!! $featuredPost->getExcerpt() !!}</p>
+
+                    <a href="{{ $featuredPost->getUrl() }}" title="Read - {{ $featuredPost->title }}" class="mb-4 tracking-wide uppercase">
+                        Read
+                    </a>
                 </div>
 
                 @if (! $loop->last)
-                    <hr class="block md:hidden w-full border-b mt-2 mb-6">
+                    <hr class="my-6 border-b">
                 @endif
             @endforeach
         </div>
-
-        @if (! $loop->last)
-            <hr class="w-full border-b mt-2 mb-6">
-        @endif
-    @endforeach
+    </div>
 @stop
