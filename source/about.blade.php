@@ -5,15 +5,38 @@ description: A little bit about the site
 @extends('_layouts.master')
 
 @section('body')
-    <h1>About</h1>
+    @md
+        # About
+        <div class="grid grid-cols-4 gap-16">
+            <section class="col-span-3" markdown="1">
+                Hey there fellow human!
 
-    <img src="/assets/img/about.png"
-        alt="About image"
-        class="flex rounded-full h-64 w-64 bg-contain mx-auto md:float-right my-6 md:ml-10">
+                My name is Curtis Blackwell 🐐. I write here about myself and my work. I intend to focus on my growth and share excerpts from my journaling that I find interesting.
 
-    <p class="mb-6">This is where you can give a little more information about yourself or site. If you'd like to change the structure of this page, you can find the file at <code>source/about.blade.php</code></p>
+                You can expect to find content related to [high sensitivity](https://hsperson.com/), my hobbies, software development, management, and thinking about things as systems/engines/I'm-not-great-at-articulating-this-yet. I'll bet a lot of it will be me processing what I learn from [people who inspire me](Inspiring%20People.md).
+            </section>
 
-    <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum officia dolorem accusantium veniam quae, possimus, temporibus explicabo magni voluptas. fugit natus deserunt atque veniam possimus earum harum itaque est!</p>
+            <aside markdown="1">
+                ## Elsewhere
+                - [My website](https://curtisblackwell.com/)
+                - [Twitter](https://twitter.com/_cpb)
+                - [Polywork](https://www.polywork.com/curtisblackwell)
+            </aside>
+        </div>
 
-    <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum officia dolorem accusantium veniam quae, possimus, temporibus explicabo magni voluptas. fugit natus deserunt atque veniam!</p>
+
+        ---
+
+
+        # Reading {.text-2xl}
+        - Geek Incentives, Kent Beck
+        - Agile coaches' writing, Kent Beck, Ron Jeffries, and GeePaw Hill
+        - Shape Up, Ryan Singer
+        - Thinking in Services, Majid Iqbal (in progress)
+        - First Break All The Rules, Gallup (in progress)
+        - Design for Safety, Eva PenzeyMoog (up next)
+        - Resilient Management, Lara Hogan (up next)
+
+    @endmd
+</div>
 @endsection
