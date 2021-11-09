@@ -31,13 +31,13 @@ pagination:
 
 
         # Reading {.text-2xl}
-        - Geek Incentives, Kent Beck
-        - Agile coaches' writing, Kent Beck, Ron Jeffries, and GeePaw Hill
-        - Shape Up, Ryan Singer
-        - Thinking in Services, Majid Iqbal (in progress)
-        - First Break All The Rules, Gallup (in progress)
-        - Design for Safety, Eva PenzeyMoog (up next)
-        - Resilient Management, Lara Hogan (up next)
+        - [Geek Incentives](https://geekincentives.substack.com), Kent Beck
+        - Agile coaches' writing, [Kent Beck](https://twitter.com/KentBeck); [Ron Jeffries](https://ronjeffries.com); and [GeePaw Hill](https://twitter.com/GeePawHill)
+        - [Shape Up](https://basecamp.com/shapeup/webbook), Ryan Singer
+        - [Thinking in Services](https://www.bispublishers.com/thinking-in-services.html), Majid Iqbal (in progress)
+        - [First, Break All the Rules: What the World's Greatest Managers Do Differently](https://store.gallup.com/p/en-us/10286/first-break-all-the-rules), Gallup (in progress)
+        - [Design for Safety](https://abookapart.com/products/design-for-safety), Eva PenzeyMoog (up next)
+        - [Resilient Management](https://abookapart.com/products/resilient-management), Lara Hogan (up next)
     @endmd
 
     <hr class="my-6 border-b">
