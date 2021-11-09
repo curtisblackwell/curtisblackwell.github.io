@@ -61,6 +61,8 @@ return [
             : $cleaned;
     },
     'isActive' => function ($page, $path) {
-        return Str::endsWith(trimPath($page->getPath()), trimPath($path));
+        return $path === '/'
+            ? $page->getPath() === ''
+            : Str::endsWith(trimPath($page->getPath()), trimPath($path));
     },
 ];
