@@ -23243,6 +23243,10 @@ main + footer::before {
   top: 0;
 }
 
+ul, ol {
+  padding-left: 1.5em;
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;
