@@ -16,7 +16,7 @@ pagination:
 
                 My name is Curtis Blackwell 🐐. I write here about myself and my work. I intend to focus on my growth and share some of my journaling excerpts that I find interesting.
 
-                You can expect to find content related to [high sensitivity](https://hsperson.com/), my hobbies, software development, management, and thinking about things as systems/engines/I'm-not-great-at-articulating-this-yet. I'll bet a lot of it will be me processing what I learn from [people who inspire me](Inspiring%20People.md).
+                You can expect to find content related to [high sensitivity](https://hsperson.com/), my hobbies, software development, management, and thinking about things as systems/engines/I'm-not-great-at-articulating-this-yet. I'll bet a lot of it will be me processing what I learn from [people who inspire me](/inspiring-people).
             </section>
 
             <aside markdown="1">
