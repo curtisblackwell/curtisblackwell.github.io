@@ -13,7 +13,7 @@ return [
     'collections' => [
         'posts' => [
             'author' => 'Curtis Blackwell', // Default author, if not provided in a post
-            'sort'   => '-date' ,
+            'sort'   => '-filename' ,
             'path'   => 'blog/{filename}' ,
             'filter' => fn ($post) => $post->published,
         ],

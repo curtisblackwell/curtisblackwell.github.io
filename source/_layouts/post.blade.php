@@ -29,17 +29,17 @@
 
     <nav class="flex justify-between text-sm md:text-base">
         <div>
-            @if ($next = $page->getNext())
-                <a href="{{ $next->getUrl() }}" title="Older Post: {{ $next->title }}">
-                    &LeftArrow; {{ $next->title }}
+            @if ($previous = $page->getPrevious())
+                <a href="{{ $previous->getUrl() }}" title="Newer Post: {{ $previous->title }}">
+                    &LeftArrow; {{ $previous->title }}
                 </a>
             @endif
         </div>
 
         <div>
-            @if ($previous = $page->getPrevious())
-                <a href="{{ $previous->getUrl() }}" title="Newer Post: {{ $previous->title }}">
-                    {{ $previous->title }} &RightArrow;
+            @if ($next = $page->getNext())
+                <a href="{{ $next->getUrl() }}" title="Older Post: {{ $next->title }}">
+                    {{ $next->title }} &RightArrow;
                 </a>
             @endif
         </div>
