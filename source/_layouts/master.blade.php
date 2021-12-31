@@ -66,7 +66,7 @@
 
         <footer class="relative py-4 mt-12 text-sm text-center bg-white">
             <ul class="flex flex-col justify-center space-x-4 list-none md:flex-row">
-                <li><a href="./resume.pdf">Resumé</a></li>
+                <li><a href="/resume.pdf">Resumé</a></li>
                 <li><a href="https://github.com/curtisblackwell">Github</a></li>
                 <li><a href="/blog">Writing</a></li>
                 <li>
