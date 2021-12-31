@@ -20,7 +20,7 @@
                         {{ $featuredPost->getDate()->format('Y.m.d') }}
                     </p>
 
-                    <h2 class="mt-0 text-3xl">
+                    <h2 class="mt-0 text-2xl">
                         <a href="{{ $featuredPost->getUrl() }}" title="Read {{ $featuredPost->title }}" class="font-extrabold text-gray-900">
                             {{ $featuredPost->title }}
                         </a>
