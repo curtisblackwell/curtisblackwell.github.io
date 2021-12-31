@@ -7,7 +7,7 @@ Lately I've taken on more leadership roles in my work. Since joining [Highland](
 - got an established dev team to learn and embrace [Laravel's](https://laravel.com) and [Vue's](https://vuejs.org) conventions,
 - created [a framework for collaboratively defining development standards](https://github.com/HighlandSolutions/development-standards),
 - organized a biweekly, all-dev meeting where we conspire to make our work better,
-- mentored a few junior developers,
+- mentored other developers,
 - led a team in using [*Shape Up*](https://basecamp.com/shapeup/webbook) to unanimous delight,
 - supported my product manager in her work using [*Thinking in Services*](https://www.bispublishers.com/thinking-in-services.html) to uncover and solve for gaps in a complex project (I'm convinced *Thinking in Services* is the next big thing in strategy and service design), and
 - helped co-workers get a DEI working group off the ground (and kept it alive after they took new jobs elsewhere).
