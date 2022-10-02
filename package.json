@@ -1,7 +1,7 @@
 {
   "scripts": {
     "watch": "npx tailwindcss -i ./src/input.css -o ./site.css --watch",
-    "build": "npx tailwindcss -o site.css --minify"
+    "minify": "npx tailwindcss -o site.css --minify"
   },
   "dependencies": {
     "tailwindcss": "^3.1.8"
